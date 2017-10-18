@@ -1,0 +1,26 @@
+@import "../../styles/constants"
+
+$logo-width: 28%
+$logo-right-margin: 7%
+
+.md-header
+  height: $header-height
+  position: relative
+
+.md-header__logo
+  height: 100%
+  position: absolute
+  width: $logo-width
+  user-select: none
+  cursor: pointer
+
+  > img
+    width: 80%
+    height: 100%
+    float: right
+
+.md-header__main-nav
+  position: absolute
+  height: 100%
+  width: 100 - $logo-width - $logo-right-margin - 5%
+  left: $logo-width + $logo-right-margin

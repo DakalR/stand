@@ -1,0 +1,37 @@
+@import '../../../styles/constants'
+@import '../../../styles/mixin'
+
+.md-requirements-vector
+  padding: rem(80) rem(150) rem(60) $home-padding-left
+
+  > h2
+    font-size: rem(33)
+    line-height: rem(55)
+    font-weight: 500
+    color: #FFFFFF
+    text-transform: uppercase
+
+.md-requirements-vector__items
+  margin-top: rem(50)
+  width: 100%
+
+.md-requirements-vector__items_left,
+.md-requirements-vector__items_right
+  width: 49%
+  display: inline-block
+  vertical-align: top
+
+
+.md-requirements-vector__item
+  display: block
+  width: rem(420)
+  color: #FFFFFF
+  padding-bottom: rem(20)
+  font-size: rem(14)
+  line-height: rem(20)
+
+  &:not(:nth-of-type(2n))
+    margin-right: rem(60)
+
+  > b
+    color: #0c80dc

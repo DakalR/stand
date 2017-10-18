@@ -1,0 +1,46 @@
+@import '../../styles/constants'
+@import '../../styles/mixin'
+
+.md-product
+  padding: rem(80) rem(100) rem(60) rem(600)
+  position: relative
+  height: rem(718)
+
+.md-product__image
+  width: rem(490)
+  height: 100%
+  left: rem(44)
+  top: 0
+  position: absolute
+  text-align: center
+
+  > img
+    max-width: 100%
+    max-height: 70%
+    position: absolute
+    display: block
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.md-product__content
+  color: #FFFFFF
+  position: relative
+
+.md-product__section
+  padding: 0 rem(60) rem(30) 0
+  border-bottom: rem(2) solid #62aff0
+
+  > h3
+    font-size: font-size(35)
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: rem(2)
+
+  > p
+    padding-top: rem(30)
+    line-height: rem(22)
+    font-size: font-size(14)
+  b
+    font-weight: bold
+

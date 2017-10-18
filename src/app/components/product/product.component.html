@@ -1,0 +1,12 @@
+<div class="md-product">
+  <div class="md-product__image">
+    <img src="{{'assets/' + product.imagePath}}" alt="">
+  </div>
+  <div class="md-product__content">
+    <div class="md-product__section">
+      <h3>{{product.title}}</h3>
+      <p [innerHTML]="product.description"></p>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
